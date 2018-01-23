@@ -77,12 +77,12 @@ module.exports = {
     new webpack.NamedModulesPlugin(),
   ],
   devServer: {
-    historyApiFallback: {
-      index: '/speakincolor/index.html',
-    },
-    port: 8000,
-    https: true,
-    public: 'localhost',
+  //   historyApiFallback: {
+  //     index: '/speakincolor/index.html',
+  //   },
+    port: 8080,
+  //   https: false,
+    // public: 'localhost',
     publicPath: '/speakincolor/',
   },
 };

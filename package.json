@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "WEBPACK_DEV_IP=`ifconfig en0 | grep inet | grep -v inet6 | awk '{print $2}'` && webpack-dev-server --content-base dist --hot --host $WEBPACK_DEV_IP"
+    "start": "webpack-dev-server --host 0.0.0.0",
+    "default": "WEBPACK_DEV_IP=`ifconfig en0 | grep inet | grep -v inet6 | awk '{print $2}'` && webpack-dev-server --content-base dist --hot --host $WEBPACK_DEV_IP"
   },
   "repository": {
     "type": "git",
