@@ -9,3 +9,4 @@
 # To Get Started
 * `Run npm install`
 * `Run npm start`
+* Go to http://0.0.0.0:8080/speakincolor/
