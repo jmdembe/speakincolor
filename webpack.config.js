@@ -80,9 +80,9 @@ module.exports = {
     historyApiFallback: {
       index: '/speakincolor/index.html',
     },
-    port: 8000,
+    // port: 8000,
     https: true,
-    public: 'localhost',
+    public: 'localhost:8000',
     publicPath: '/speakincolor/',
   },
 };
