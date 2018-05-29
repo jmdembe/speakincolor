@@ -2,6 +2,7 @@ const resolve = require('path').resolve;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const WebpackDevServer = require('./webpack-dev')
 const webpack = require('webpack');
 
 module.exports = {
@@ -84,6 +85,7 @@ module.exports = {
     port: 8000,
     https: true,
     public: 'localhost:8000',
+    contentBase: './dist',
     publicPath: '/speakincolor/',
   },
 };
